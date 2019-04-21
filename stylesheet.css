@@ -101,6 +101,7 @@ Module Styles
   background: #8DC63F;
   border-color: #8DC63F;
   color: white;
+  font-weight: normal;
 }
 
 .btn-primary:hover {
@@ -111,6 +112,39 @@ Module Styles
 
 .btn-nav {
   color: white;
+}
+
+@media (min-width: 48em){
+  .btn-nav {
+    padding:10px 15px 10px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.125em;
+    font-weight: normal;
+    background: #8DC63F;
+    border-color: #8DC63F;
+    color: white;
+  }
+
+  .btn-nav:hover{
+    background: none;
+    border-color: white;
+    text-decoration: none;
+  }
+}
+
+.btn-toggle-menu{
+  position: absolute;
+  top:15px;
+  right:15px;
+  padding:10px 15px 10px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.125em;
+}
+
+@media (max-width: 48em){
+  .btn-toggle-menu{
+    display:none;
+  }
 }
 
 /****** Header Modules ******/
@@ -182,6 +216,79 @@ Module Styles
   margin-top: 25px;
 }
 
+.hero-body > button{
+  background: none;
+  border: 1pt solid white;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 30px 15px 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 1.750em;
+}
+.hero-body > button:hover {
+  background: white;
+  color: #39B54A;
+}
+
+/***** Testimonial Content module *****/
+
+.testimony{
+  text-align: center;
+  height:460px;
+}
+
+@media (min-width: 48em){
+  .testimony{
+    height:400px;
+  }
+}
+
+.testimony-primary {
+  background-color: #594a42;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.testimony-primary.bg-image > img {
+  opacity: .25;
+}
+.testimony-body {
+  position: relative;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media (min-width: 48em){
+  .testimony-body {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.testimony-text{
+  margin-top: 60px;
+}
+}
+.testimony-fa i{
+  font-size: 3em;
+  letter-spacing: .2em;
+}
+.testimony-text{
+  margin-top: 50px;
+}
+.testimony-text p {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 1.2em ;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+}
+.testimony-text p > strong{
+  font-style: normal;
+}
+
 /***** Background Modules *****/
 
 .bg-image  {
@@ -204,6 +311,11 @@ Module Styles
 .media, .media-body {
   overflow:hidden;
 }
+.media-item, .media-body{
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
 
 .media-item {
   float:left;
@@ -212,6 +324,14 @@ Module Styles
 .media-item i {
   color: #594a42;
   font-size: 5em;
+  float:left;
+}
+
+.media-body > p{
+  font-family: Arial, Helvetica, sans-serif;
+  text-justify: left;
+  font-size: 1em;
+  margin-bottom: 40px;
 }
 
 /***************************
@@ -232,7 +352,7 @@ Theme Styles
     background: #907fa1;
   }
   .background-quinary {
-    background: #e7e1d7;
+    background: #C2B59B;
 }
 
 /* Media Query excludes extra small devices and includes small and above */
